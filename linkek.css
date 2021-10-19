@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+    box-sizing: border-box;
+    
+}
+body{
+    max-width: 1200px;
+    /*order: 1px solid gray;*/
+    margin: 0 auto; /*ezzel a dobozt raktam középre*/
+    display:flex;
+    flex-wrap: wrap; /*ha nem férnek el egymás mellett, a gyerek elemek, akkor töje a sort*/
+}
+header{
+    /*background-image: url(banner-min.png);*/
+    /*background-size: cover;*//*ekkor maximálisan kitölti azt a helyet, ami a felírat miatt szükséges*/
+    width: 100%;
+    color: #873225;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 120px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+
+}
+header::before{
+    content:"";
+    background-image: url(banner-min.png);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    height: 120px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    width:100%;
+    background-color: #dce1ed;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2px;
+    /*border:1px solid black;*/
+}
+nav a{
+    font-weight: bold;
+    background-color: #873225;
+    color: white;
+    min-width: 10rem;
+    text-align: center;
+    margin-bottom:3px;
+    padding: 10px;
+    border-radius: 3px;
+}
+main{
+    /*border: 1px solid green;*/
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+section{
+    flex: 1;
+    background-color: #dce1ed;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
+section p{
+    text-align: center;
+}
+section a{
+    text-decoration: none;
+    color: #873225;
+    font-weight: bold;
+    border: 1px solid #873225;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+footer{
+    background-color: #dce1ed;
+    border-top:2px solid #873225;
+    width: 100%;
+    margin-top:5px;
+}
