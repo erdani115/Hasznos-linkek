@@ -16,7 +16,7 @@ header{
     /*background-image: url(banner-min.png);*/
     /*background-size: cover;*//*ekkor maximálisan kitölti azt a helyet, ami a felírat miatt szükséges*/
     width: 100%;
-    color: #873225;
+    color: whitesmoke;
     display: flex;
     justify-content:center;
     align-items:center;
